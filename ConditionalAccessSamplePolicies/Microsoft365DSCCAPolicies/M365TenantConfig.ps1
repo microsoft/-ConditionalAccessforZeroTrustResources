@@ -106,7 +106,7 @@ Configuration M365TenantConfig
             Credential                               = $Credscredential;
             DisplayName                              = "CA100-Admins-BaseProtection-AllApps-AnyPlatform-MFAANDCompliant";
             Ensure                                   = "Present";
-            ExcludeApplications                      = @("d4ebce55-015a-49b5-a083-c84d1797ae8c");
+            ExcludeApplications                      = @("d4ebce55-015a-49b5-a083-c84d1797ae8c","50e95039-b200-4007-bc97-8d5790743a63");
             ExcludeGroups                            = @("CA-BreakGlassAccounts","CA-Persona-Admins-BaseProtection-Exclusions","CA-Persona-Microsoft365ServiceAccounts","CA-Persona-AzureServiceAccounts","CA-Persona-CorpServiceAccounts");
             ExcludeLocations                         = @();
             ExcludePlatforms                         = @();
@@ -1046,7 +1046,7 @@ Configuration M365TenantConfig
             Credential                               = $Credscredential;
             DisplayName                              = "CA500-GuestAdmins-BaseProtection-AllApps-AnyPlatform-MFA";
             Ensure                                   = "Present";
-            ExcludeApplications                      = @();
+            ExcludeApplications                      = @("50e95039-b200-4007-bc97-8d5790743a63");
             ExcludeGroups                            = @("CA-BreakGlassAccounts","CA-Persona-GuestAdmins");
             ExcludeLocations                         = @();
             ExcludePlatforms                         = @();
@@ -1942,7 +1942,7 @@ Configuration M365TenantConfig
             Credential                               = $Credscredential;
             DisplayName                              = "CA400-Guests-BaseProtection-AllApps-AnyPlatform-MFA";
             Ensure                                   = "Present";
-            ExcludeApplications                      = @();
+            ExcludeApplications                      = @("50e95039-b200-4007-bc97-8d5790743a63");
             ExcludeGroups                            = @();
             ExcludeLocations                         = @();
             ExcludePlatforms                         = @();
